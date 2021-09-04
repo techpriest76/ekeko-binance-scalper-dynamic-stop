@@ -26,7 +26,7 @@ for i in range(50, len(klines)):
         counter = counter + float(klines[j][4])
     mean = counter/50
 
-    price = float(klines[i][4])
+    
     if price < mean * 0.980 and 0 < dollars:
         BTC_q = BTC_q + dollars / float(klines[i][4])
         dollars = dollars - BTC_q * float(klines[i][4])
