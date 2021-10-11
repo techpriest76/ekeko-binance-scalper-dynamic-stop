@@ -31,9 +31,8 @@ def tendency(current_coin): #first derivative, check if in up or downtrend
 		model = np.polyfit(x,y,1)
 		if model[0] > 0:
 			tendency_50 = True
-			return tendency_50
-		else:
-			return tendency_50	
+		
+		return (tendency_50)
 
 
 def ma_50(current_coin): #moving average 50, 15 minutes
