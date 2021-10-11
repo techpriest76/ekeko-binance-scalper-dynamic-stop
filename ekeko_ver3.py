@@ -123,7 +123,7 @@ def set_order(current_coin, quant, flo_po):
 		print('Uptrend!') 
 
 		# No initial stop_loss
-		# if prices don't go upw the bot will HODL untill they do
+		# if prices don't go up the script will HODL untill they do
 
 		if float(price) < mean50*0.98: #buys at a price 2% lower than te MA50
 			print('Buying!')
