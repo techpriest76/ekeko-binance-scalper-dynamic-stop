@@ -159,7 +159,7 @@ while True: #Loop
 		time.sleep(20)
 	
 	except:
-		print('Something went wrong, possible connection was interrupted')
+		print('Something went wrong, possibly connection was interrupted')
 		print('trying again in a moment')
 		time.sleep(20)
 		continue
