@@ -144,16 +144,23 @@ def set_order(current_coin, quant, flo_po):
 
 
 while True: #Loop
+	try:
 
-	for i in range(len(pair)):
-		coin = pair[i]
-		coin_quantity = quantity[i]
-		coin_point = decimals[i]
-		if not review_current_order(coin, coin_point):
-			set_order(coin, coin_quantity, coin_point)
+		for i in range(len(pair)):
+			coin = pair[i]
+			coin_quantity = quantity[i]
+			coin_point = decimals[i]
+			if not review_current_order(coin, coin_point):
+				set_order(coin, coin_quantity, coin_point)
 
-	print('A cycle has been completed')
-	print('sleeping for a bit')
-	print(' ')
-	time.sleep(20)
+		print('A cycle has been completed')
+		print('sleeping for a bit')
+		print(' ')
+		time.sleep(20)
+	
+	except:
+		print('Something went wrong, possible connection was interrupted')
+		print('trying again in a moment')
+		time.sleep(20)
+		continue
 
