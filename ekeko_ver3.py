@@ -90,7 +90,8 @@ def review_current_order(current_coin, flo_po): #checks conditions to apply stop
 				type = 'STOP_LOSS_LIMIT',
 				price = round(float(limit)*1.01,flo_po),
 				stopPrice = round(float(limit)*0.98,flo_po),
-				timeInForce = 'GTC'
+				timeInForce = 'GTC',
+				quantity = quantity_order
 				)			
 			print('Cancelled order:')
 			print(cancelled_order)
