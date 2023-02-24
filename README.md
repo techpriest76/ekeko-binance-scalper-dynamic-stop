@@ -1,6 +1,4 @@
 # ekeko-binance-scalper-dynamic-stop
-easy money win win
-
 How does it work?
 
 The script will check the price for every coin listed in the 'pair' list, (details in the code commentaries).
